@@ -1,0 +1,40 @@
+
+header.bg-dark {
+    background-color: #343a40 !important; /* צבע רקע כהה (שחור כהה) בהתחלה */
+    backdrop-filter: none; /* ללא אפקט טשטוש בהתחלה */
+    transition: background-color 0.3s ease, backdrop-filter 0.3s ease; /* אפקט מעבר רך */
+}
+
+header.scrolled {
+    background-color: rgba(0, 0, 0, 0.5) !important; /* רמת שקיפות של 50% */
+    backdrop-filter: blur(10px); /* אפקט טשטוש */
+}
+
+@media (max-width: 768px) {
+    header.bg-dark .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    header.bg-dark .container h2 {
+        margin-bottom: 10px;
+    }
+
+    header.bg-dark .d-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header.bg-dark .btn {
+        margin-bottom: 10px;
+    }
+
+    header.bg-dark .btn-light {
+        font-size: 14px;
+    }
+
+    header.bg-dark .btn-warning {
+        font-size: 14px;
+    }
+}

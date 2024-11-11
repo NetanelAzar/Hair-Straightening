@@ -1,0 +1,17 @@
+        /* Registration Form */
+        #registration .form-group {
+            margin-bottom: 20px;
+        }
+        #registration input, #registration button {
+            padding: 10px 15px;
+            border-radius: 20px;
+        }
+        #registration button {
+            background-color: #ff6f61;
+            font-weight: bold;
+            border: none;
+            transition: background-color 0.3s;
+        }
+        #registration button:hover {
+            background-color: #ff4c39;
+        }

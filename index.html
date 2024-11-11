@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>האקדמיה של חלקלי - קורס החלקות שיער</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
+    <link rel="stylesheet" href="./CSS/Header.css"/>
+    <link rel="stylesheet" href="./CSS/hero-video.css"/>
+    <link rel="stylesheet" href="./CSS/HeroSection.css"/>
+    <link rel="stylesheet" href="./CSS/Registration-Form.css"/>
+    <link rel="stylesheet" href="./CSS/Section-Titles.css"/>
+    <link rel="stylesheet" href="./CSS/special-offer.css"/>
+    <link rel="stylesheet" href="./CSS/Footer.css"/>
+    <!-- Add Font Awesome for icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #444;
+            line-height: 1.7;
+            background-color: #f4f4f4;
+            padding-top: 60px;
+        }
+
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="bg-dark text-light py-3 fixed-top">
+    <div class="container d-flex justify-content-between align-items-center">
+        <!-- תמונת לוגו במקום הטקסט -->
+        <a href="#" class="m-0">
+            <img src="./pic/halak-li-logo-e1674065747680.png" alt="לוגו האקדמיה של חלקלי" style="height: 50px;">
+        </a>
+        
+        <div class="d-flex align-items-center">
+            <a href="tel:+972506929172" class="btn btn-light me-3">
+                <i class="bi bi-telephone-fill"></i> התקשרי: 0505050500
+            </a>
+            <a href="https://wa.me/972506929172?text=שלום%20אני%20מעוניינת%20בייעוץ%20חינם" class="btn btn-success">
+                <i class="bi bi-whatsapp"></i> שלחי הודעה
+            </a>
+        </div>
+        <a href="#registration" class="btn btn-warning ms-3">הרשמה עכשיו</a>
+    </div>
+</header>
+<!-- Bootstrap Icons for phone and WhatsApp -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+<script src="./JS/Header.js"></script>
+
+
+
+
+
+
+
+
+
+<!-- Hero Section -->
+<section class="hero animate__animated animate__fadeIn" style="position: relative; overflow: hidden;">
+    <!-- Video Background -->
+    <video autoplay muted loop id="hero-video" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+        <source src="./video/10320006-uhd_4096_2160_25fps.mp4" type="video/mp4">
+        <!-- אפשר להוסיף גם פורמטים אחרים של סרטון אם יש צורך -->
+        <source src="path/to/your-video.webm" type="video/webm">
+        <source src="path/to/your-video.ogv" type="video/ogv">
+        סרטון לא נתמך בדפדפן שלך.
+    </video>
+
+    <div class="container" style="position: relative; z-index: 1; color: #fff; text-align: center; padding-top: 100px;">
+        <h1 class="animate__animated animate__fadeInDown">קורס החלקות שיער מקצועי</h1>
+        <p class="animate__animated animate__fadeInUp">8 שנים ניסיון בעבודה בשטח ובהדרכה מקצועית!</p>
+        <a href="#registration" class="btn btn-lg cta-button animate__animated animate__pulse animate__infinite">הרשמה עכשיו</a>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--TEXT-->
+<section class="py-5" style="background-color: #f8f9fa; border-radius: 15px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
+    <div class="container text-center">
+        <h2 class="section-title mb-4" data-aos="fade-in" data-aos-duration="1500" style="font-family: 'Roboto', sans-serif; font-weight: 700; color: #343a40; display: inline-block; position: relative; padding-bottom: 10px;">
+            הידע שלנו ההצלחה שלך!
+            <span class="line-animation" style="position: absolute; bottom: 0; left: 0; width: 100%; height: 2px; background: linear-gradient(to right, #343a40 0%, #f8f9fa 50%, #343a40 100%);"></span>
+        </h2>
+
+        <p data-aos="fade-up" data-aos-duration="1500" style="font-size: 1.2rem; font-weight: 400; color: #6c757d; max-width: 800px; margin: 20px auto;">
+            מחפשת מקצוע חדש או הכנסה נוספת? הגעת למקום הנכון!
+            <br>האקדמיה של חלקלי – החלקות שיער נותנת לך את כל הכלים להתחיל דרך חדשה ועצמאית.
+            <br>רמה גבוהה, יחס אישי וליווי צמוד לאורך כל הדרך!
+        </p>
+
+        <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500" style="font-size: 1.4rem; font-weight: 700; color: #343a40;">
+            <strong>לפרטים נוספים השאירי פרטים וקבלי כבר עכשיו <span class="discount">10% הנחה</span>!</strong>
+            <br><strong>לרישום לקורס שנפתח בחודש הקרוב</strong>
+        </div>
+    </div>
+</section>
+<style>/* עיצוב כותרת */
+    .section-title {
+        animation: fadeInText 1.5s ease-out forwards;
+    }
+    
+    /* אנימציה של הקו התחתון */
+    .line-animation {
+        width: 0%;
+        animation: expandLine 1.5s ease-out forwards;
+    }
+    
+    @keyframes fadeInText {
+        0% {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    @keyframes expandLine {
+        0% {
+            width: 0%;
+        }
+        50% {
+            width: 50%;
+        }
+        100% {
+            width: 100%;
+        }
+    }
+    
+    /* עיצוב עבור טקסט */
+    .custom-section {
+        font-family: 'Arial', sans-serif;
+        text-align: center;
+        padding: 40px 20px;
+        background-color: #f8f9fa;
+        border-radius: 15px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+    
+    .custom-text {
+        margin-bottom: 20px;
+    }
+    
+    .custom-text p {
+        font-size: 18px;
+        color: #333;
+        line-height: 1.6;
+    }
+    
+    /* עיצוב הנחה */
+    .discount {
+        color: #d9534f;
+        font-weight: bold;
+    }
+    
+    
+    
+    /* עיצוב רספונסיבי */
+    @media (max-width: 768px) {
+        .form-fields {
+            flex-direction: column;
+        }
+    
+        .form-field {
+            flex-basis: 100%;
+        }
+    }
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="py-5" style="background-color: #f8f9fa; border-radius: 15px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
+    <div class="container text-center">
+        <h2 class="section-title mb-4" data-aos="fade-in" data-aos-duration="1500" style="font-family: 'Roboto', sans-serif; font-weight: 700; color: #343a40; display: inline-block; position: relative; padding-bottom: 10px;">
+            היתרונות שלנו
+            <span class="line-animation" style="position: absolute; bottom: 0; left: 0; width: 100%; height: 2px; background: linear-gradient(to right, #343a40 0%, #f8f9fa 50%, #343a40 100%);"></span>
+        </h2>
+        
+        <p data-aos="fade-up" data-aos-duration="1500" style="font-size: 1.2rem; font-weight: 400; color: #6c757d; max-width: 800px; margin: 20px auto;">
+            מקצועיות ברמה הגבוהה ביותר, כל הכלים החדשניים, הטכניקות המקצועיות והידע העיוני שיתנו לך <b>יתרון ענק בשוק&nbsp;</b>!<br><b>יחס אישי</b> פלוס ליווי צמוד להמשך הדרך !<br>הידע והמקצועיות שלנו תגרום ל<b>הצלחה שלך</b>
+        </p>
+        
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-4" data-aos="zoom-in" data-aos-duration="1500">
+                <img src="./pic/IMG-20241111-WA0023.jpg" class="img-fluid fixed-image" alt="תמונה של קורס 1">
+            </div>
+            <div class="col-md-4" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="500">
+                <img src="./pic/IMG-20241111-WA0024.jpg" class="img-fluid fixed-image" alt="תמונה של קורס 2">
+            </div>
+            <div class="col-md-4" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1000">
+                <img src="./pic/IMG-20241111-WA0025.jpg" class="img-fluid fixed-image" alt="תמונה של קורס 3">
+            </div>
+        </div>
+    </div>
+</section>
+<style>
+    .fixed-image {
+        width: 100%; /* מתאים את הרוחב לגודל עמודה */
+        height: 400px; /* גובה קבוע */
+        object-fit: cover; /* שמירה על פרופורציות */
+        border-radius: 15px;
+    }
+</style>
+
+
+
+
+
+
+
+
+<!-- Course Details Section -->
+<section class="py-5" data-aos="fade-up" style="background-color: #f8f9fa; border-radius: 15px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
+    <div class="container text-center">
+        <h2 class="section-title mb-4 animate__animated animate__fadeIn" data-aos="fade-right" style="font-family: 'Roboto', sans-serif; font-weight: 700; color: #343a40; display: inline-block; position: relative; padding-bottom: 10px;">
+            מה כולל הקורס?
+            <span class="line-animation" style="position: absolute; bottom: 0; left: 0; width: 100%; height: 2px; background: linear-gradient(to right, #343a40 0%, #f8f9fa 50%, #343a40 100%);"></span>
+        </h2>
+        
+        <!-- CSS for line animation -->
+        <style>
+            .section-title {
+                animation: fadeInText 1.5s ease-out forwards;
+            }
+        
+            /* Animation for the line */
+            .line-animation {
+                width: 0%;
+                animation: expandLine 1.5s ease-out forwards;
+            }
+        
+            @keyframes fadeInText {
+                0% {
+                    opacity: 0;
+                    transform: translateY(20px);
+                }
+                100% {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+        
+            @keyframes expandLine {
+                0% {
+                    width: 0%;
+                }
+                50% {
+                    width: 50%;
+                }
+                100% {
+                    width: 100%;
+                }
+            }
+        </style>
+        
+        <div class="row justify-content-center">
+            <!-- Course 1 -->
+            <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="course-card" style="position: relative; overflow: hidden; cursor: pointer; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                    <div class="course-info" style="padding: 20px; background-color: #ffffff; transition: all 0.3s ease;">
+                        <h3 style="font-size: 1.4rem; color: #495057;">שיעור 1 – עיוני פלוס תרגול על בובה</h3>
+                        <p style="font-size: 1.1rem; color: #6c757d;">הסבר על השיעור</p>
+                    </div>
+                    <div class="course-details" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-image: url('../פרוייקטים/קורס-החלקות-שיער-קרטין-.jpg'); background-size: cover; background-position: center; opacity: 0; transition: opacity 0.3s ease;">
+                        <div class="text-overlay" style="position: absolute; bottom: 20px; left: 20px; color: white; font-size: 1.2rem; font-weight: 600;">
+                            <p>תמונה עם הסבר נוסף על השיעור</p>
+                        </div>
+                    </div>
+                    <!-- Explanation under the image -->
+                    <div class="course-description" style="padding: 15px; background-color: #f8f9fa; font-size: 1rem; color: #495057;">
+                        <p>בשיעור זה תלמדי כיצד לעבוד עם טכניקות עיוניות בשילוב תרגול על בובה. השיעור כולל הסברים מפורטים והדגמות לשיפור המיומנויות שלך.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course 2 -->
+            <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="course-card" style="position: relative; overflow: hidden; cursor: pointer; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                    <div class="course-info" style="padding: 20px; background-color: #ffffff; transition: all 0.3s ease;">
+                        <h3 style="font-size: 1.4rem; color: #495057;">שיעור 2 – מעשי</h3>
+                        <p style="font-size: 1.1rem; color: #6c757d;">הסבר על השיעור</p>
+                    </div>
+                    <div class="course-details" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-image: url('your-image-path.jpg'); background-size: cover; background-position: center; opacity: 0; transition: opacity 0.3s ease;">
+                        <div class="text-overlay" style="position: absolute; bottom: 20px; left: 20px; color: white; font-size: 1.2rem; font-weight: 600;">
+                            <p>תמונה עם הסבר נוסף על השיעור</p>
+                        </div>
+                    </div>
+                    <!-- Explanation under the image -->
+                    <div class="course-description" style="padding: 15px; background-color: #f8f9fa; font-size: 1rem; color: #495057;">
+                        <p>בשיעור זה נעבוד על הטכניקות המעשיות של החלקת שיער, כולל הדגמות אישיות לכל תלמיד. השיעור יתמקד בהיבטים המעשיים שדרושים להצלחה בתחום.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p data-aos="fade-left" style="font-size: 1.2rem; font-weight: 400; color: #6c757d; max-width: 800px; margin: 20px auto;">
+            בקורס את לומדת את כל תורת השיער ואת כל הטכניקות, מההתחלה ועד הסוף, תחת השגחה אישית וליווי צמוד.
+        </p>
+    </div>
+</section>
+<style>
+    /* Make the explanation appear only when hovering over the card */
+    .course-card:hover .course-description {
+        opacity: 1; /* Show the description */
+        transition: opacity 0.3s ease; /* Smooth transition for opacity */
+    }
+
+    /* Ensure course-info stays in place */
+    .course-card .course-info {
+        transition: transform 0.3s ease;
+    }
+
+    /* Optional: you can move the course-info slightly up when hovering for a nice effect */
+    .course-card:hover .course-info {
+        transform: translateY(-20px);
+    }
+
+    /* Hide the description by default */
+    .course-description {
+        opacity: 0;
+        transition: opacity 0.3s ease; /* Smooth transition for opacity */
+    }
+    
+</style>
+
+
+
+
+
+
+
+<!-- Curriculum Section -->
+<section class="py-5 bg-light">
+    <div class="container text-center">
+        <h2 class="section-title mb-4" data-aos="fade-right">תוכנית הקורס</h2>
+        <div class="row">
+            <!-- Item 1: אבחון והכרת סוגי השיער -->
+            <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body">
+                        <i class="fas fa-users text-primary" style="font-size: 2rem;"></i> <!-- אייקון של משתמשים -->
+                        <h5 class="card-title text-primary">אבחון והכרת סוגי השיער</h5>
+                        <p class="card-text">הכרת סוגי השיער וניתוחם לעבודה מתאימה.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Item 2: חלוקה לאזורים -->
+            <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body">
+                        <i class="fas fa-palette text-primary" style="font-size: 2rem;"></i> <!-- אייקון של פלטת צבעים -->
+                        <h5 class="card-title text-primary">חלוקה לאזורים</h5>
+                        <p class="card-text">טכניקות לחלוקת שיער לאזורים לעבודה יעילה.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Item 3: עבודה עם סוגי שיער שונים -->
+            <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body">
+                        <i class="fas fa-cut text-primary" style="font-size: 2rem;"></i> <!-- אייקון של מספריים -->
+                        <h5 class="card-title text-primary">עבודה עם סוגי שיער שונים</h5>
+                        <p class="card-text">טיפול והתאמה של שיטות עבור סוגי שיער מגוונים.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Item 4: הכרת סוגי החומרים להחלקות -->
+            <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="400">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body">
+                        <i class="fas fa-flask text-primary" style="font-size: 2rem;"></i> <!-- אייקון של מבחנה -->
+                        <h5 class="card-title text-primary">הכרת סוגי החומרים להחלקות</h5>
+                        <p class="card-text">מידע על החומרים השונים והתאמתם להחלקות שונות.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- New Item 1: אבחון והכרת החומרים לסוגי שיער שונים -->
+            <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="500">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body">
+                        <i class="fas fa-flask text-primary" style="font-size: 2rem;"></i> <!-- אייקון של מבחנה -->
+                        <h5 class="card-title text-primary">אבחון והכרת החומרים לסוגי שיער שונים</h5>
+                        <p class="card-text">תיאום ציפיות והתמקדות עם מצבים שונים.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- New Item 2: תיאום ציפיות והתמקדות עם מצבים שונים -->
+            <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="600">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body">
+                        <i class="fas fa-check-circle text-primary" style="font-size: 2rem;"></i> <!-- אייקון של סמל אישור -->
+                        <h5 class="card-title text-primary">תיאום ציפיות והתמקדות עם מצבים שונים</h5>
+                        <p class="card-text">הבנת הציפיות והמצבים השונים והכנה לעבודה בצורה מיטבית.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- New Item 3: שלבי עבודה וביצוע המחליק באופן יסודי -->
+            <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="700">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body">
+                        <i class="fas fa-tools text-primary" style="font-size: 2rem;"></i> <!-- אייקון של כלים -->
+                        <h5 class="card-title text-primary">שלבי עבודה וביצוע המחליק באופן יסודי</h5>
+                        <p class="card-text">ביצוע כל שלב בהחלקה באופן יסודי לשמירה על איכות העבודה.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- New Item 4: הסוד שלנו לשימור ההחלקות לאחר החפיפה לתקופת זמן -->
+            <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="800">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body">
+                        <i class="fas fa-shower text-primary" style="font-size: 2rem;"></i> <!-- אייקון של מקלחת -->
+                        <h5 class="card-title text-primary">הסוד שלנו לשימור ההחלקות לאחר החפיפה לתקופת זמן</h5>
+                        <p class="card-text">הטיפים שלנו לשימור ההחלקה לאחר חפיפה ומתי לעבור תחזוקה.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- New Item 5: תעודה לסיום הקורס -->
+            <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="900">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body">
+                        <i class="fas fa-certificate text-primary" style="font-size: 2rem;"></i> <!-- אייקון של תעודה -->
+                        <h5 class="card-title text-primary">תעודה לסיום הקורס</h5>
+                        <p class="card-text">תעודה המוענקת למשתתפים בסיום הקורס להכרה בידע שרכשו.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p data-aos="fade-left" class="mt-4">הידע שלנו ההצלחה שלך!</p>
+    </div>
+</section>
+
+
+
+
+
+
+<!-- Special Offer Section -->
+<section class="special-offer" data-aos="zoom-in">
+    <div class="container">
+        <h2>מבצע מיוחד!</h2>
+        <p>כל הקודמת זוכה 10% הנחה לחודש הקרוב!</p>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+<section id="testimonials" class="py-5 bg-light">
+    <div class="container text-center">
+        <h2 class="section-title mb-5" data-aos="fade-in" data-aos-duration="1500">
+            לקוחות מספרים
+        </h2>
+        <div class="row">
+            <!-- עדות 1 -->
+            <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-duration="1500">
+                <div class="testimonial-card p-4 bg-white shadow-sm">
+                    <img src="./pic/IMG-20241111-WA0025.jpg" alt="תמונה של לקוח 1" class="rounded-circle mb-3" width="100" height="100">
+                    <div class="stars mb-3">
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                    </div>
+                    <p class="testimonial-text">השירות היה מעולה והמקצועיות הייתה ברמה גבוהה מאוד. ממליצה בחום!</p>
+                    <p class="client-name fw-bold">שרה לוי</p>
+                    <div class="icons mt-3">
+                        <i class="bi bi-emoji-smile text-info"></i>
+                        <i class="bi bi-award text-primary"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- עדות 2 -->
+            <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="500">
+                <div class="testimonial-card p-4 bg-white shadow-sm">
+                    <img src="./pic/IMG-20241111-WA0024.jpg" alt="תמונה של לקוח 2" class="rounded-circle mb-3" width="100" height="100">
+                    <div class="stars mb-3">
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-half text-warning"></i>
+                    </div>
+                    <p class="testimonial-text">מקצועיות ואמינות! קיבלתי יחס אישי וליווי לאורך כל הדרך.</p>
+                    <p class="client-name fw-bold">דנה כהן</p>
+                    <div class="icons mt-3">
+                        <i class="bi bi-heart text-danger"></i>
+                        <i class="bi bi-hand-thumbs-up text-success"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- עדות 3 -->
+            <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1000">
+                <div class="testimonial-card p-4 bg-white shadow-sm">
+                    <img src="./pic/IMG-20241111-WA0026.jpg" alt="תמונה של לקוח 3" class="rounded-circle mb-3" width="100" height="100">
+                    <div class="stars mb-3">
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star text-warning"></i>
+                        <i class="bi bi-star text-warning"></i>
+                    </div>
+                    <p class="testimonial-text">חוויה מעולה ושירות שאין כמותו! ממליצה לכולם.</p>
+                    <p class="client-name fw-bold">מיכל פרידמן</p>
+                    <div class="icons mt-3">
+                        <i class="bi bi-trophy text-warning"></i>
+                        <i class="bi bi-emoji-heart-eyes text-pink"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<style>.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #343a40;
+}
+
+.testimonial-card {
+    border-radius: 15px;
+}
+
+.testimonial-text {
+    font-size: 1.1rem;
+    color: #6c757d;
+    margin-bottom: 10px;
+}
+
+.client-name {
+    font-size: 1.2rem;
+    color: #343a40;
+}
+.stars i {
+    font-size: 1.2rem;
+    margin-right: 3px;
+}
+
+.icons i {
+    font-size: 1.5rem;
+    margin-right: 5px;
+}
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="specialOfferModal" tabindex="-1" aria-labelledby="specialOfferModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <!-- Header with Logo -->
+            <div class="modal-header justify-content-center position-relative">
+                <img src="./pic/halak-li-logo-e1674065747680.png" alt="לוגו הקורס" class="modal-logo"> <!-- שינוי לנתיב הלוגו שלך -->
+            </div>
+            <!-- Body with Course Details -->
+            <div class="modal-body text-center">
+                <h3 class="modal-title">הצעה מיוחדת לקורסים!</h3>
+                <p class="offer-text">הירשם עכשיו לקורס ותקבל הנחה של 10% על כל הקורסים בחודש הקרוב!</p>
+                <img src="./pic/קורס-החלקות-שיער-קרטין-.jpg" alt="קורס" class="modal-image mb-4"> <!-- שינוי לנתיב לתמונה של הקורס -->
+                <p class="modal-details">הזדמנות ללמוד עם המורים הטובים ביותר בתחום, אל תפספס את ההנחה!</p>
+                
+                <!-- Form for User Details -->
+                <h4>הירשם עכשיו</h4>
+                <form id="registrationForm" method="POST" class="special-offer-form">
+                    <div class="form-group">
+                        <label for="fullName">שם מלא</label>
+                        <input type="text" class="form-control special-input" id="fullName" name="fullName" placeholder="הכנס שם מלא" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">אימייל</label>
+                        <input type="email" class="form-control special-input" id="email" name="email" placeholder="הכנס אימייל" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">מספר פלאפון</label>
+                        <input type="tel" class="form-control special-input" id="phone" name="phone" placeholder="הכנס מספר פלאפון" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary mt-3">שלח</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Custom CSS for Styling -->
+<style>
+    /* כללי עיצוב למודל */
+    .modal-content {
+        background: linear-gradient(145deg, #fafafa, #ececec);
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        padding: 15px;
+    }
+
+    /* עיצוב ראשי */
+    .modal-header {
+        background: #222;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        padding: 10px 0;
+    }
+
+    /* עיצוב לוגו */
+    .modal-logo {
+        width: 120px;
+        max-height: 60px;
+        object-fit: contain;
+    }
+
+    /* עיצוב גוף */
+    .modal-body {
+        font-family: 'Arial', sans-serif;
+        color: #333;
+        padding: 30px;
+    }
+
+    /* כותרת המודל */
+    .modal-title {
+        font-family: 'Georgia', serif;
+        font-size: 2rem;
+        font-weight: bold;
+        color: #d35400;
+        margin-bottom: 20px;
+    }
+
+    /* טקסט המבצע */
+    .offer-text {
+        font-weight: bold;
+        font-size: 1.3rem;
+        color: #e74c3c;
+        margin-bottom: 20px;
+    }
+
+    /* עיצוב תמונה */
+    .modal-image {
+        max-width: 100%;
+        height: auto;
+        border-radius: 15px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    /* פרטי המבצע */
+    .modal-details {
+        font-size: 1.1rem;
+        color: #555;
+        margin-top: 15px;
+    }
+
+    /* עיצוב הטופס במודל */
+    .special-offer-form .form-group {
+        margin-bottom: 15px;
+    }
+
+    .special-offer-form .form-control.special-input {
+        border-radius: 5px;
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    /* כפתור שליחה */
+    .special-offer-form .btn {
+        background-color: #d35400;
+        color: white;
+        font-weight: bold;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 1.1rem;
+        border: none;
+    }
+
+    .special-offer-form .btn:hover {
+        background-color: #e67e22;
+    }
+
+    /* רקע כהה למודל */
+    .modal-backdrop {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Media Queries for Mobile Responsiveness */
+    @media (max-width: 576px) {
+        .modal-dialog {
+            max-width: 90%; /* מקטין את רוחב המודל לנייד */
+        }
+
+        .modal-body {
+            padding: 20px; /* פחות ריפוד במובייל */
+        }
+
+        .modal-title {
+            font-size: 1.5rem; /* גודל טקסט קטן יותר במובייל */
+        }
+
+        .offer-text {
+            font-size: 1rem; /* טקסט קטן יותר במובייל */
+        }
+
+        .special-offer-form .form-control.special-input {
+            font-size: 0.9rem; /* גודל טקסט קטן יותר בשדות הקלט */
+        }
+
+        .special-offer-form .btn {
+            font-size: 1rem; /* גודל כפתור קטן יותר */
+        }
+    }
+</style>
+
+<!-- JavaScript להצגת המודל אחרי 10 שניות -->
+<script src="./JS/Modal.js"></script>
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Registration Form Section -->
+<section id="registration" class="py-5" data-aos="fade-up">
+    <div class="container text-center">
+        <h2 class="section-title" data-aos="fade-right">להרשמה ופרטים נוספים</h2>
+        <form class="mx-auto" style="max-width: 500px;">
+            <div class="form-group" data-aos="fade-up" data-aos-delay="100">
+                <input type="text" class="form-control" placeholder="שם מלא">
+            </div>
+            <div class="form-group" data-aos="fade-up" data-aos-delay="200">
+                <input type="email" class="form-control" placeholder="אימייל">
+            </div>
+            <div class="form-group" data-aos="fade-up" data-aos-delay="300">
+                <input type="text" class="form-control" placeholder="טלפון">
+            </div>
+            <button type="submit" class="btn btn-lg btn-block text-light mt-3" data-aos="fade-up" data-aos-delay="400">שלח</button>
+        </form>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <p>כל הזכויות שמורות לאקדמיה של חלקלי © 2024</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://example.com/your-background-image.jpg') center/cover no-repeat;
+            color: white;
+            padding: 200px 0;
+            text-align: center;
+            border-bottom: 5px solid #ff6f61;
+        }
+        .hero h1 {
+            font-size: 3.8rem;
+            font-weight: 900;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+        }
+        .hero p {
+            font-size: 1.4rem;
+            max-width: 700px;
+            margin: 15px auto;
+        }
+        .cta-button {
+            background-color: #ff6f61;
+            color: white;
+            font-weight: bold;
+            padding: 15px 30px;
+            border-radius: 30px;
+            box-shadow: 3px 4px 12px rgba(0, 0, 0, 0.4);
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #ff4c39;
+            transform: translateY(-4px);
+        }
+
+            /* הוספת אנימציה להזזת ה-card */
+    .card {
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .card:hover {
+        transform: translateY(-10px); /* הזזת ה-card כלפי מעלה */
+    }
