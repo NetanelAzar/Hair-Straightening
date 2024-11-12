@@ -240,6 +240,19 @@
 
 
 
+<!-- הוספת האייקון כקובץ SVG -->
+<img src="../hair-straightener-svgrepo-com.svg" alt="Hair Straightener" width="100" height="100" class="straightener">
+
+
+
+
+
+
+
+
+
+
+
 
 
 <!-- Course Details Section -->
@@ -354,6 +367,135 @@
     }
     
 </style>
+
+
+
+
+<!-- הוספת האייקון כקובץ SVG -->
+<img src="../hair-straightener-svgrepo-com.svg" alt="Hair Straightener" width="100" height="100" class="straightener">
+<style>
+/* עיצוב האייקון */
+.straightener {
+    position: relative; /* מיקום רגיל בתוך הדף */
+    top: 0; /* מיקום האייקון יתחיל ממקום המידע המקורי */
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block; /* ממורכז אוטומטית */
+    transition: transform 0.3s ease-out; /* אנימציה חלקה בזמן תזוזה */
+}
+
+/* התאמה למובייל */
+@media (max-width: 767px) {
+    .straightener {
+        width: 80px; /* הקטנת האייקון במובייל */
+        height: 80px;
+    }
+}
+</style>
+<script>
+// פונקציה לעקוב אחרי גלילת הדף
+window.addEventListener('scroll', function() {
+    var scrollY = window.scrollY; // מקבל את כמות הגלילה
+
+    // עבור כל אייקון עם class="straightener"
+    var icons = document.querySelectorAll('.straightener');
+    icons.forEach(function(icon) {
+        // חשב את כיוון הסיבוב לפי כמות הגלילה
+        var rotateDegree = scrollY / 5;
+        
+        // עדכון האנימציה של האייקון (סיבוב) בהתאם לגלילה
+        icon.style.transform = 'rotate(' + rotateDegree + 'deg)';
+    });
+});
+
+</script>
+
+
+
+
+
+<!--video-->
+<section class="course-details">
+    <div class="container text-center">
+      <h2 class="section-title mb-4">תוכנית הקורס</h2>
+  
+      <!-- קונטיינר לסרטון -->
+      <div class="video-container mb-5">
+        <iframe class="video-responsive" src="../WhatsApp Video 2024-11-11 at 20.03.37_2912a828.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+  
+      <!-- תיאור -->
+      <p>צפו בסרטון כדי להבין יותר על התכנים שנלמד בקורס.</p>
+    </div>
+  </section>
+  
+  <!-- הוספת CSS -->
+  <style>
+    /* עיצוב של הקורס */
+    .course-details {
+      padding: 20px 0;
+      background-color: #f8f9fa;
+    }
+  
+    .section-title {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #343a40;
+    }
+  
+    /* עיצוב הסרטון כך שיתאים לכל המכשירים */
+    .video-container {
+      position: relative;
+      width: 60%; /* הגדרה של רוחב קטן יותר */
+      max-width: 500px; /* הגבלה על רוחב מקסימלי */
+      margin: 0 auto; /* למרכז את הסרטון */
+      padding-bottom: 56.25%; /* יחס 16:9 */
+      height: 0;
+      overflow: hidden;
+    }
+  
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  
+    /* עיצוב מותאם למכשירים ניידים */
+    @media (max-width: 768px) {
+      .section-title {
+        font-size: 1.5rem; /* גודל פונט קטן יותר */
+      }
+  
+      .video-container {
+        width: 80%; /* הסרטון יתפוס 80% מהמסך במובייל */
+        max-width: 400px; /* מגבלה לרוחב במובייל */
+      }
+  
+      .video-container iframe {
+        width: 100%;
+        height: auto;
+      }
+  
+      p {
+        font-size: 1rem; /* גודל פונט קטן יותר */
+      }
+    }
+  </style>
+  
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -775,20 +917,43 @@
 <section id="registration" class="py-5" data-aos="fade-up">
     <div class="container text-center">
         <h2 class="section-title" data-aos="fade-right">להרשמה ופרטים נוספים</h2>
-        <form class="mx-auto" style="max-width: 500px;">
+        <form id="registration-form" class="mx-auto" style="max-width: 500px">
             <div class="form-group" data-aos="fade-up" data-aos-delay="100">
-                <input type="text" class="form-control" placeholder="שם מלא">
+                <input type="text" name="fullName" class="form-control" placeholder="שם מלא" required>
             </div>
             <div class="form-group" data-aos="fade-up" data-aos-delay="200">
-                <input type="email" class="form-control" placeholder="אימייל">
+                <input type="email" name="email" class="form-control" placeholder="אימייל" required>
             </div>
             <div class="form-group" data-aos="fade-up" data-aos-delay="300">
-                <input type="text" class="form-control" placeholder="טלפון">
+                <input type="text" name="phone" class="form-control" placeholder="טלפון" required>
             </div>
             <button type="submit" class="btn btn-lg btn-block text-light mt-3" data-aos="fade-up" data-aos-delay="400">שלח</button>
         </form>
     </div>
 </section>
+
+<!-- JS Script -->
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+    // Initialize EmailJS with your User ID
+    emailjs.init('fHbRlD7XmMkaKycCW');  // השתמש ב-User ID שלך כאן
+
+    // Handle form submission
+    document.getElementById('registration-form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        // Send form data to EmailJS
+        emailjs.sendForm('service_c5zmcp2', 'template_pfj6tkt', this)
+            .then(function(response) {
+                alert('הפרטים נשלחו בהצלחה!');
+                console.log('Success:', response);
+            }, function(error) {
+                alert('משהו השתבש, אנא נסה שוב מאוחר יותר');
+                console.log('Error:', error);
+            });
+    });
+</script>
+
 
 <!-- Footer -->
 <footer class="footer">
