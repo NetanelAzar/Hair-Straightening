@@ -30,6 +30,12 @@
 </head>
 <body>
 
+
+
+
+
+
+
 <!-- Header -->
 <header class="bg-dark text-light py-3 fixed-top">
     <div class="container d-flex justify-content-between align-items-center">
@@ -240,7 +246,11 @@
 
 
 
-<!-- הוספת האייקון כקובץ SVG -->
+
+
+
+
+<!-- הוספת האייקון כקובץ  -->
 <img src="./pic/hair-straightener-svgrepo-com.png" alt="Hair Straightener" width="100" height="100" class="straightener">
 
 
@@ -371,7 +381,7 @@
 
 
 
-<!-- הוספת האייקון כקובץ SVG -->
+<!-- הוספת האייקון כקובץ  -->
 <img src="./pic/hair-straightener-svgrepo-com.png" alt="Hair Straightener" width="100" height="100" class="straightener">
 <style>
 /* עיצוב האייקון */
@@ -429,7 +439,6 @@ window.addEventListener('scroll', function() {
       <p>צפו בסרטון כדי להבין יותר על התכנים שנלמד בקורס.</p>
     </div>
   </section>
-  
   <!-- הוספת CSS -->
   <style>
     /* עיצוב של הקורס */
@@ -624,7 +633,7 @@ window.addEventListener('scroll', function() {
 
 
 
-
+<!--customers-->
 <section id="testimonials" class="py-5 bg-light">
     <div class="container text-center">
         <h2 class="section-title mb-5" data-aos="fade-in" data-aos-duration="1500">
@@ -732,13 +741,14 @@ window.addEventListener('scroll', function() {
 
 
 
-
-<!-- Modal -->
+<!-- Modal without the form -->
 <div class="modal fade" id="specialOfferModal" tabindex="-1" aria-labelledby="specialOfferModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
-            <!-- Header with Logo -->
+            <!-- Header with Logo and Close Button -->
             <div class="modal-header justify-content-center position-relative">
+                <!-- Close Button on the Left -->
+                <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">&times;</button>
                 <img src="./pic/halak-li-logo-e1674065747680.png" alt="לוגו הקורס" class="modal-logo"> <!-- שינוי לנתיב הלוגו שלך -->
             </div>
             <!-- Body with Course Details -->
@@ -747,29 +757,10 @@ window.addEventListener('scroll', function() {
                 <p class="offer-text">הירשם עכשיו לקורס ותקבל הנחה של 10% על כל הקורסים בחודש הקרוב!</p>
                 <img src="./pic/קורס-החלקות-שיער-קרטין-.jpg" alt="קורס" class="modal-image mb-4"> <!-- שינוי לנתיב לתמונה של הקורס -->
                 <p class="modal-details">הזדמנות ללמוד עם המורים הטובים ביותר בתחום, אל תפספס את ההנחה!</p>
-                
-                <!-- Form for User Details -->
-                <h4>הירשם עכשיו</h4>
-                <form id="registrationForm" method="POST" class="special-offer-form">
-                    <div class="form-group">
-                        <label for="fullName">שם מלא</label>
-                        <input type="text" class="form-control special-input" id="fullName" name="fullName" placeholder="הכנס שם מלא" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">אימייל</label>
-                        <input type="email" class="form-control special-input" id="email" name="email" placeholder="הכנס אימייל" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">מספר פלאפון</label>
-                        <input type="tel" class="form-control special-input" id="phone" name="phone" placeholder="הכנס מספר פלאפון" required>
-                    </div>
-                    <button type="submit" class="btn btn-primary mt-3">שלח</button>
-                </form>
             </div>
         </div>
     </div>
 </div>
-
 <!-- Custom CSS for Styling -->
 <style>
     /* כללי עיצוב למודל */
@@ -778,6 +769,7 @@ window.addEventListener('scroll', function() {
         border-radius: 20px;
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
         padding: 15px;
+        font-family: 'Lora', serif; /* פונט נטוי */
     }
 
     /* עיצוב ראשי */
@@ -786,6 +778,21 @@ window.addEventListener('scroll', function() {
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
         padding: 10px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    /* כפתור איקס בצד שמאל */
+    .close-btn {
+        position: absolute;
+        left: 10px;
+        color: white;
+        font-size: 2rem;
+        background: none;
+        border: none;
+        cursor: pointer;
     }
 
     /* עיצוב לוגו */
@@ -797,31 +804,36 @@ window.addEventListener('scroll', function() {
 
     /* עיצוב גוף */
     .modal-body {
-        font-family: 'Arial', sans-serif;
         color: #333;
         padding: 30px;
     }
 
     /* כותרת המודל */
     .modal-title {
-        font-family: 'Georgia', serif;
-        font-size: 2rem;
+        font-family: 'Lora', serif; /* שינוי לפונט נטוי */
+        font-size: 2.5rem;
         font-weight: bold;
         color: #d35400;
         margin-bottom: 20px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-style: italic; /* הוספת נטוי לכותרת */
     }
 
     /* טקסט המבצע */
     .offer-text {
         font-weight: bold;
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         color: #e74c3c;
         margin-bottom: 20px;
+        text-transform: capitalize;
+        letter-spacing: 1px;
+        font-style: italic; /* הוספת נטוי לטקסט המבצע */
     }
 
     /* עיצוב תמונה */
     .modal-image {
-        max-width: 100%;
+        max-width: 70%;
         height: auto;
         border-radius: 15px;
         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
@@ -829,35 +841,9 @@ window.addEventListener('scroll', function() {
 
     /* פרטי המבצע */
     .modal-details {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         color: #555;
         margin-top: 15px;
-    }
-
-    /* עיצוב הטופס במודל */
-    .special-offer-form .form-group {
-        margin-bottom: 15px;
-    }
-
-    .special-offer-form .form-control.special-input {
-        border-radius: 5px;
-        padding: 10px;
-        font-size: 1rem;
-    }
-
-    /* כפתור שליחה */
-    .special-offer-form .btn {
-        background-color: #d35400;
-        color: white;
-        font-weight: bold;
-        padding: 10px 20px;
-        border-radius: 5px;
-        font-size: 1.1rem;
-        border: none;
-    }
-
-    .special-offer-form .btn:hover {
-        background-color: #e67e22;
     }
 
     /* רקע כהה למודל */
@@ -865,38 +851,16 @@ window.addEventListener('scroll', function() {
         background-color: rgba(0, 0, 0, 0.8);
     }
 
-    /* Media Queries for Mobile Responsiveness */
-    @media (max-width: 576px) {
-        .modal-dialog {
-            max-width: 90%; /* מקטין את רוחב המודל לנייד */
-        }
-
-        .modal-body {
-            padding: 20px; /* פחות ריפוד במובייל */
-        }
-
-        .modal-title {
-            font-size: 1.5rem; /* גודל טקסט קטן יותר במובייל */
-        }
-
-        .offer-text {
-            font-size: 1rem; /* טקסט קטן יותר במובייל */
-        }
-
-        .special-offer-form .form-control.special-input {
-            font-size: 0.9rem; /* גודל טקסט קטן יותר בשדות הקלט */
-        }
-
-        .special-offer-form .btn {
-            font-size: 1rem; /* גודל כפתור קטן יותר */
-        }
+    /* קטינה את גודל המודל */
+    .modal-dialog {
+        max-width: 400px; /* קביעת רוחב מקסימלי */
     }
+
+    /* הוספת פונט ייחודי מ-Google Fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,400&display=swap');
 </style>
-
-<!-- JavaScript להצגת המודל אחרי 10 שניות -->
+<!-- JavaScript להצגת המודל אחרי 10 שניות וסגירה של ה modal-->
 <script src="./JS/Modal.js"></script>
-
-
 
 
   
@@ -917,7 +881,8 @@ window.addEventListener('scroll', function() {
 <section id="registration" class="py-5" data-aos="fade-up">
     <div class="container text-center">
         <h2 class="section-title" data-aos="fade-right">להרשמה ופרטים נוספים</h2>
-        <form id="registration-form" class="mx-auto" style="max-width: 500px">
+        <!-- שים לב שהטופס מכיל את הפעולה של Formspree -->
+        <form id="registration-form" action="https://formspree.io/f/xnnqvzjn" method="POST" class="mx-auto" style="max-width: 500px">
             <div class="form-group" data-aos="fade-up" data-aos-delay="100">
                 <input type="text" name="fullName" class="form-control" placeholder="שם מלא" required>
             </div>
@@ -932,27 +897,11 @@ window.addEventListener('scroll', function() {
     </div>
 </section>
 
-<!-- JS Script -->
-<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-<script>
-    // Initialize EmailJS with your User ID
-    emailjs.init('fHbRlD7XmMkaKycCW');  // השתמש ב-User ID שלך כאן
 
-    // Handle form submission
-    document.getElementById('registration-form').addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent the default form submission
 
-        // Send form data to EmailJS
-        emailjs.sendForm('service_c5zmcp2', 'template_pfj6tkt', this)
-            .then(function(response) {
-                alert('הפרטים נשלחו בהצלחה!');
-                console.log('Success:', response);
-            }, function(error) {
-                alert('משהו השתבש, אנא נסה שוב מאוחר יותר');
-                console.log('Error:', error);
-            });
-    });
-</script>
+
+
+
 
 
 <!-- Footer -->
@@ -960,11 +909,12 @@ window.addEventListener('scroll', function() {
     <p>כל הזכויות שמורות לאקדמיה של חלקלי © 2024</p>
 </footer>
 
+
+
+
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-<script>
-    AOS.init();
-</script>
+<script src="./JS/AOS.js"></script>
 </body>
 </html>
