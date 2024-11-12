@@ -372,44 +372,41 @@
 
 
 <!-- הוספת האייקון כקובץ SVG -->
-<img src="./pic/hair-straightener-svgrepo-com.png" alt="Hair Straightener" width="100" height="100" class="straightener">
+<img src="./pic/hair-straightener-svgrepo-com.png" alt="Hair Straightener" class="straightener">
 <style>
 /* עיצוב האייקון */
 .straightener {
-    position: relative; /* מיקום רגיל בתוך הדף */
-    top: 0; /* מיקום האייקון יתחיל ממקום המידע המקורי */
-    left: 0;
-    margin-left: auto;
-    margin-right: auto;
-    display: block; /* ממורכז אוטומטית */
-    transition: transform 0.3s ease-out; /* אנימציה חלקה בזמן תזוזה */
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    display: block;
+    transition: transform 0.3s ease-out;
 }
 
 /* התאמה למובייל */
 @media (max-width: 767px) {
     .straightener {
-        width: 80px; /* הקטנת האייקון במובייל */
+        width: 80px;
         height: 80px;
     }
 }
 </style>
+
 <script>
 // פונקציה לעקוב אחרי גלילת הדף
 window.addEventListener('scroll', function() {
-    var scrollY = window.scrollY; // מקבל את כמות הגלילה
+    var scrollY = window.scrollY;
 
-    // עבור כל אייקון עם class="straightener"
-    var icons = document.querySelectorAll('.straightener');
-    icons.forEach(function(icon) {
-        // חשב את כיוון הסיבוב לפי כמות הגלילה
+    // סיבוב האייקון לפי כמות הגלילה
+    var icon = document.querySelector('.straightener');
+    if (icon) {
         var rotateDegree = scrollY / 5;
-        
-        // עדכון האנימציה של האייקון (סיבוב) בהתאם לגלילה
         icon.style.transform = 'rotate(' + rotateDegree + 'deg)';
-    });
+    }
 });
-
 </script>
+
 
 
 
