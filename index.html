@@ -394,18 +394,21 @@
 </style>
 
 <script>
-// פונקציה לעקוב אחרי גלילת הדף
-window.addEventListener('scroll', function() {
-    var scrollY = window.scrollY;
-
-    // סיבוב האייקון לפי כמות הגלילה
-    var icon = document.querySelector('.straightener');
-    if (icon) {
-        var rotateDegree = scrollY / 5;
-        icon.style.transform = 'rotate(' + rotateDegree + 'deg)';
-    }
-});
-</script>
+    // פונקציה לעקוב אחרי גלילת הדף
+    window.addEventListener('scroll', function() {
+        var scrollY = window.scrollY; // כמות הגלילה
+    
+        // בחירת כל האייקונים עם class="straightener"
+        var icons = document.querySelectorAll('.straightener');
+        icons.forEach(function(icon) {
+            // חשב את כיוון הסיבוב לפי כמות הגלילה
+            var rotateDegree = scrollY / 5;
+            
+            // עדכון האנימציה של כל אייקון בנפרד
+            icon.style.transform = 'rotate(' + rotateDegree + 'deg)';
+        });
+    });
+    </script>
 
 
 
