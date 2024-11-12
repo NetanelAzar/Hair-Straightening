@@ -21,10 +21,14 @@
 
 /* Media query for mobile screens */
 @media (max-width: 767px) {
-    .col-12, .col-md-6, .col-lg-4 {
-        /* כרטיסים יתפוס את כל רוחב המסך */
+    .col-md-6 {
+        /* כל כרטיס יתפוס 100% מהמרווח על מסכים קטנים */
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .col-lg-4 {
+        /* עבור מסכים קטנים, כרטיסים לא יהיו 33% רוחב */
         flex: 0 0 100%;
         max-width: 100%;
     }
 }
-
