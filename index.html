@@ -10,12 +10,14 @@
     <link rel="stylesheet" href="./CSS/Header.css"/>
     <link rel="stylesheet" href="./CSS/hero-video.css"/>
     <link rel="stylesheet" href="./CSS/HeroSection.css"/>
-    <link rel="stylesheet" href="./CSS/Registration-Form.css"/>
+    <link rel="stylesheet" href="./CSS/Registration-Form.css"/><!--טופס הרשמה-->
     <link rel="stylesheet" href="./CSS/Section-Titles.css"/>
-    <link rel="stylesheet" href="./CSS/special-offer.css"/>
+    <link rel="stylesheet" href="./CSS/special-offer.css"/><!--מבצע-->
     <link rel="stylesheet" href="./CSS/Footer.css"/>
     <link rel="stylesheet" href="./CSS/scroll-arrow.css"/><!--חץ גלילה-->
     <link rel="stylesheet" href="./CSS/Social-Media-Icons.css"/>
+    <link rel="stylesheet" href="./CSS/Customers.css"/><!--לקוחות מספרים-->
+    <link rel="stylesheet" href="./CSS/Straightener-Icon.css">
    <!-- CDN Font Awesome עדכני -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
@@ -644,43 +646,7 @@
 
 <!-- הוספת האייקון כקובץ  -->
 <img src="./pic/hair-straightener-svgrepo-com.png" alt="Hair Straightener" width="100" height="100" class="straightener">
-<style>
-/* עיצוב האייקון */
-.straightener {
-    position: relative; /* מיקום רגיל בתוך הדף */
-    top: 0; /* מיקום האייקון יתחיל ממקום המידע המקורי */
-    left: 0;
-    margin-left: auto;
-    margin-right: auto;
-    display: block; /* ממורכז אוטומטית */
-    transition: transform 0.3s ease-out; /* אנימציה חלקה בזמן תזוזה */
-}
-
-/* התאמה למובייל */
-@media (max-width: 767px) {
-    .straightener {
-        width: 80px; /* הקטנת האייקון במובייל */
-        height: 80px;
-    }
-}
-</style>
-<script>
-// פונקציה לעקוב אחרי גלילת הדף
-window.addEventListener('scroll', function() {
-    var scrollY = window.scrollY; // מקבל את כמות הגלילה
-
-    // עבור כל אייקון עם class="straightener"
-    var icons = document.querySelectorAll('.straightener');
-    icons.forEach(function(icon) {
-        // חשב את כיוון הסיבוב לפי כמות הגלילה
-        var rotateDegree = scrollY / 5;
-        
-        // עדכון האנימציה של האייקון (סיבוב) בהתאם לגלילה
-        icon.style.transform = 'rotate(' + rotateDegree + 'deg)';
-    });
-});
-
-</script>
+<script src="./JS/Straightener-Icon.js"></script>
 
 
 
@@ -1001,37 +967,7 @@ window.addEventListener('scroll', function() {
         </div>
     </div>
 </section>
-<style>.section-title {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #343a40;
-}
 
-.testimonial-card {
-    border-radius: 15px;
-}
-
-.testimonial-text {
-    font-size: 1.1rem;
-    color: #6c757d;
-    margin-bottom: 10px;
-}
-
-.client-name {
-    font-size: 1.2rem;
-    color: #343a40;
-}
-.stars i {
-    font-size: 1.2rem;
-    margin-right: 3px;
-}
-
-.icons i {
-    font-size: 1.5rem;
-    margin-right: 5px;
-}
-
-</style>
 
 
 
